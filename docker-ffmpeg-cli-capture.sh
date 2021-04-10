@@ -13,4 +13,4 @@ function get_filename_without_suffix() {
 }
 
 
-docker-ffmpeg-cli.sh -i "${VIDEO_FILE}" -ss "${START_TIME}" -vframes 1 "$(get_filename_without_suffix "${VIDEO_FILE}").jpg"
+docker-ffmpeg-cli.sh -ss "${START_TIME}" -i "${VIDEO_FILE}" -vframes 1 "$(get_filename_without_suffix "${VIDEO_FILE}").jpg"
